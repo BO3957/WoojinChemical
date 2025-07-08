@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+  background-color: #00529b;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.about,
+.services {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
+}
