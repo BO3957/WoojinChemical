@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Banner from '../components/Banner'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
             </ul>
           </nav>
         </header>
+        <Banner />
         <section className={styles['chem-hero']}>
           <h1>Welcome to WoojinChemical</h1>
           <p>Leading innovations in chemical solutions.</p>
