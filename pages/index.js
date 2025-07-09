@@ -21,6 +21,8 @@ export default function Home() {
         <section className={styles['chem-hero']}>
           <h1>Welcome to WoojinChemical</h1>
           <p>Leading innovations in chemical solutions.</p>
+          <div className={styles.rectangle}></div>
+          <div className={styles.parallelogram}></div>
         </section>
         <section id="intro" className={styles['chem-intro']}>
           <h2>About Us</h2>
