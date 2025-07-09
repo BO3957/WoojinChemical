@@ -18,6 +18,9 @@ export default function Home() {
             </ul>
           </nav>
         </header>
+        <div className={styles['chem-banner']}>
+          <div className={styles['chem-banner-parallelogram']}></div>
+        </div>
         <section className={styles['chem-hero']}>
           <h1>Welcome to WoojinChemical</h1>
           <p>Leading innovations in chemical solutions.</p>
