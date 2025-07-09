@@ -1,0 +1,58 @@
+.chem-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.chem-nav {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+}
+
+.chem-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.chem-hero {
+  background-color: #e0f0ff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.chem-intro,
+.chem-products,
+.chem-contact {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chem-products-list {
+  list-style: none;
+  padding: 0;
+}
+
+.chem-product-item {
+  margin-bottom: 1rem;
+}
+
+.chem-contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.chem-contact label {
+  margin-bottom: 0.5rem;
+}
+
+.chem-contact input,
+.chem-contact textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
