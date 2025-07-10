@@ -2,6 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  // GitHub Pages 배포 설정
+  output: 'export',
+  trailingSlash: true,
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/WoojinChemical' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/WoojinChemical' : '',
   // 도메인 설정
   async headers() {
     return [
@@ -16,11 +21,10 @@ const nextConfig = {
       },
     ];
   },
-  // 정적 파일 서빙 설정
-  trailingSlash: false,
   // 이미지 도메인 설정 (필요시)
   images: {
     domains: [],
+    unoptimized: true,
   },
 }
 
