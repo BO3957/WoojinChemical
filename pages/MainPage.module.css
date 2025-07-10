@@ -5,12 +5,12 @@
 
 .rectangle {
     width: 100%;
-    height: 40px; /* 기존 80px의 50% */
+    height: 80px; /* 원래 크기로 복구 */
     background: linear-gradient(135deg, #4472C4 0%, #5a82d4 100%);
     border: 1px solid black;
     box-sizing: border-box;
     position: absolute;
-    top: 80px;
+    top: 110px; /* 80px + 30px */
     left: 0;
     right: 0;
     display: flex;
@@ -25,8 +25,8 @@
 }
 
 .parallelogram {
-    width: 192px;
-    height: 108px;
+    width: 163.2px; /* 192px의 15% 감소 */
+    height: 91.8px; /* 108px의 15% 감소 */
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     position: absolute;
     border: 3px solid #4472C4;
@@ -76,8 +76,8 @@
 }
 
 .searchBtn {
-    width: 28.5px; /* 기존 30px의 5% 감소 */
-    height: 28.5px;
+    width: 33px; /* 30px의 10% 증가 */
+    height: 33px;
     background: #4472C4;
     border: none;
     border-radius: 50%;
@@ -93,8 +93,8 @@
 }
 
 .searchBtn svg {
-    width: 19px;
-    height: 19px;
+    width: 24.2px; /* 22px의 10% 증가 */
+    height: 24.2px;
     display: block;
 }
 
@@ -108,12 +108,12 @@
 }
 
 .langBtn {
-    width: 85.5px; /* 기존 90px의 5% 감소 */
-    height: 34.2px; /* 기존 36px의 5% 감소 */
-    padding: 0 11.4px;
+    width: 81px; /* 85.5px의 5% 감소 */
+    height: 32.5px; /* 34.2px의 5% 감소 */
+    padding: 0 10.8px;
     background: white;
     border: 2px solid #4472C4;
-    border-radius: 17.1px;
+    border-radius: 22px; /* 더 둥글게 */
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
@@ -123,8 +123,8 @@
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12); /* 그림자 효과 */
     font-weight: 600;
-    font-size: 14.25px; /* 기존 15px의 5% 감소 */
-    gap: 7.6px;
+    font-size: 13.5px; /* 14.25px의 5% 감소 */
+    gap: 7.2px;
 }
 
 .langBtn:hover {
@@ -141,8 +141,8 @@
 }
 
 .flagCircle {
-    width: 20.9px;
-    height: 20.9px;
+    width: 19.9px;
+    height: 19.9px;
     border-radius: 50%;
     background: #fff;
     display: flex;
@@ -150,20 +150,20 @@
     justify-content: center;
     box-shadow: 0 1px 4px rgba(0,0,0,0.10);
     border: 1.5px solid #4472C4;
-    margin-left: 3.8px;
+    margin-left: 3.6px;
 }
 
 .flagImage {
-    width: 17.1px;
-    height: 17.1px;
+    width: 16.2px;
+    height: 16.2px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
 }
 
 .langBtnKorean {
-    width: 85.5px; /* 기존 90px의 5% 감소 */
-    height: 34.2px; /* 기존 36px의 5% 감소 */
+    width: 81px; /* 85.5px의 5% 감소 */
+    height: 32.5px; /* 34.2px의 5% 감소 */
     padding: 0;
     background: white;
     border: 2px solid #4472C4;
@@ -183,8 +183,8 @@
 }
 
 .menuBtn {
-    width: 28.5px;
-    height: 28.5px;
+    width: 33px; /* 30px의 10% 증가 */
+    height: 33px;
     background: #4472C4;
     border: none;
     border-radius: 50%;
@@ -200,8 +200,8 @@
 }
 
 .menuBtn svg {
-    width: 19px;
-    height: 19px;
+    width: 24.2px; /* 22px의 10% 증가 */
+    height: 24.2px;
     display: block;
 }
 
@@ -210,10 +210,11 @@
     .rectangle {
         flex-direction: column;
         height: auto;
-        min-height: 60px;
+        min-height: 80px;
         align-items: flex-start;
         padding: 8px 0 6px 0;
         position: static;
+        top: 0;
     }
     .buttonGroup {
         flex-direction: row;
@@ -224,8 +225,8 @@
         justify-content: flex-end;
     }
     .parallelogram {
-        width: 80px;
-        height: 44px;
+        width: 69px; /* 80px의 15% 감소 */
+        height: 37.4px; /* 44px의 15% 감소 */
         left: 8px;
         top: 6px;
         margin-top: 8px;
@@ -239,29 +240,29 @@
         font-size: 14px;
     }
     .langBtn, .langBtnKorean {
-        width: 60px;
-        height: 22px;
-        font-size: 8.5px;
-        border-radius: 9px;
-        padding: 0 5px;
-        gap: 4px;
+        width: 57px; /* 60px의 5% 감소 */
+        height: 20.9px; /* 22px의 5% 감소 */
+        font-size: 8px;
+        border-radius: 13px;
+        padding: 0 4.8px;
+        gap: 3.8px;
     }
     .flagCircle {
-        width: 12px;
-        height: 12px;
+        width: 10.2px;
+        height: 10.2px;
         margin-left: 1px;
     }
     .flagImage {
-        width: 9px;
-        height: 9px;
+        width: 7.7px;
+        height: 7.7px;
     }
     .searchBtn, .menuBtn {
-        width: 18px;
-        height: 18px;
+        width: 19.8px;
+        height: 19.8px;
     }
     .searchBtn svg, .menuBtn svg {
-        width: 12px;
-        height: 12px;
+        width: 13.2px;
+        height: 13.2px;
     }
 }
 
