@@ -206,10 +206,10 @@
         justify-content: flex-end;
     }
     .parallelogram {
-        width: 44.71px; /* 49.68px의 10% 감소 */
-        height: 29.92px; /* 37.4px의 20% 감소 */
+        width: 40.24px; /* 기존 44.71px의 10% 감소 */
+        height: 26.93px; /* 기존 29.92px의 10% 감소 */
         left: 8px;
-        top: -34px; /* 10px 더 위로 */
+        top: -44px; /* 기존 -34px에서 10px 더 위로 */
         margin-top: 8px;
     }
     .companyName {
@@ -238,10 +238,10 @@
         overflow: hidden;
     }
     .flagCircle {
-        width: 13px;
-        height: 13px;
-        min-width: 13px;
-        min-height: 13px;
+        width: 14px;
+        height: 14px;
+        min-width: 14px;
+        min-height: 14px;
         border-radius: 50%;
         margin-left: 1px;
         padding: 0;
