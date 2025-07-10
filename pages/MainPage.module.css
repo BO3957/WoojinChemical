@@ -206,10 +206,10 @@
         justify-content: flex-end;
     }
     .parallelogram {
-        width: 36.22px; /* 기존 40.24px의 10% 감소 */
-        height: 24.24px; /* 기존 26.93px의 10% 감소 */
+        width: 32.60px; /* 기존 36.22px의 10% 감소 */
+        height: 21.82px; /* 기존 24.24px의 10% 감소 */
         left: 8px;
-        top: -34px; /* 기존 -44px에서 10px 아래로 */
+        top: -18px; /* 8px 위로 */
         margin-top: 8px;
         background: #fff;
     }
@@ -277,7 +277,6 @@
         width: 132px;
         height: 72px;
         left: 50px;
-        top: 20px;
     }
     .wjcText {
         font-size: 28px;
