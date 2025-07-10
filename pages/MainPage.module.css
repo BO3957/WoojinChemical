@@ -187,13 +187,13 @@
 @media (max-width: 768px) {
     .rectangle {
         flex-direction: column;
-        height: 72px; /* 80px의 10% 감소 */
-        min-height: 72px;
+        height: 70px; /* 2px 줄임 */
+        min-height: 70px;
         align-items: flex-start;
         padding: 8px 0 6px 0;
         position: relative;
-        top: 20px; /* 20px 아래로 */
-        width: 100vw; /* 가로로 body에 꽉 차게 */
+        top: 20px;
+        width: 100vw; /* 가로 꽉 차게 */
         left: 0;
         right: 0;
     }
@@ -204,12 +204,13 @@
         margin: 0 6px 0 auto;
         width: 100%;
         justify-content: flex-end;
+        padding-right: 8px; /* 햄버거 메뉴 잘리지 않게 */
     }
     .parallelogram {
-        width: 32.60px; /* 기존 36.22px의 10% 감소 */
-        height: 21.82px; /* 기존 24.24px의 10% 감소 */
+        width: 32.60px;
+        height: 21.82px;
         left: 8px;
-        top: -18px; /* 8px 위로 */
+        top: -15px; /* 3px 아래로 */
         margin-top: 8px;
         background: #fff;
     }
