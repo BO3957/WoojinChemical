@@ -13,11 +13,17 @@ const MainPage = () => {
               <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
             </svg>
           </button>
-          <button className={styles.langBtn} aria-label="English">
-            <img src="/uk-flag.svg" alt="영국 국기" className={styles.flagImage} />
+          <button className={styles.langBtn} aria-label="한국어">
+            <span className={styles.langText}>KR</span>
+            <span className={styles.flagCircle}>
+              <img src="/kr-flag.png" alt="대한민국 국기" className={styles.flagImage} />
+            </span>
           </button>
-          <button className={styles.langBtnKorean} aria-label="한국어">
-            <img src="/kr-flag.png" alt="대한민국 국기" className={styles.flagImage} />
+          <button className={styles.langBtn} aria-label="English">
+            <span className={styles.langText}>EN</span>
+            <span className={styles.flagCircle}>
+              <img src="/uk-flag.svg" alt="영국 국기" className={styles.flagImage} />
+            </span>
           </button>
           <button className={styles.menuBtn} aria-label="메뉴">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
