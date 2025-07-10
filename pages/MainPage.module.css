@@ -10,7 +10,7 @@
     border: 1px solid black;
     box-sizing: border-box;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     right: 0;
     display: flex;
@@ -30,8 +30,8 @@
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     position: absolute;
     border: 3px solid #4472C4;
-    top: 20px;
-    left: 45px;
+    top: 0px;
+    left: 75px;
     transform: skewX(-43deg);
     justify-content: center;
     align-items: center;
@@ -70,7 +70,7 @@
     font-size: 35px;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 250px;
     letter-spacing: 2px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -107,57 +107,61 @@
 .langBtn {
     width: 90px;
     height: 36px;
-    padding: 0 8px;
+    padding: 0;
     background: white;
-    color: #4472C4;
     border: 2px solid #4472C4;
     border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    position: relative;
+    overflow: hidden;
 }
 
 .langBtn:hover {
-    background: #4472C4;
-    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .langBtnKorean {
     width: 90px;
     height: 36px;
-    padding: 0 8px;
+    padding: 0;
     background: white;
-    color: #4472C4;
     border: 2px solid #4472C4;
     border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    position: relative;
+    overflow: hidden;
 }
 
 .langBtnKorean:hover {
-    background: #4472C4;
-    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.flagIcon {
-    font-size: 16px;
-    line-height: 1;
+.flagBackground {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #012169 0%, #012169 25%, #ffffff 25%, #ffffff 50%, #c8102e 50%, #c8102e 75%, #ffffff 75%, #ffffff 100%);
+    background-size: 100% 100%;
+    border-radius: 2px;
 }
 
-.btnText {
-    font-size: 12px;
-    font-weight: 500;
+.flagBackgroundKr {
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 50% 50%, #cd2e3a 0%, #cd2e3a 15%, transparent 15%),
+        linear-gradient(90deg, #ffffff 0%, #ffffff 33.33%, #cd2e3a 33.33%, #cd2e3a 66.66%, #0047a0 66.66%, #0047a0 100%);
+    background-size: 100% 100%;
+    border-radius: 2px;
 }
 
 .menuBtn {
@@ -185,13 +189,13 @@
 @media (max-width: 768px) {
     .companyName {
         font-size: 28px;
-        margin-left: 120px;
+        margin-left: 170px;
         letter-spacing: 1px;
     }
     .parallelogram {
         width: 156px;
         height: 84px;
-        left: 30px;
+        left: 60px;
     }
     .wjcText {
         font-size: 35px;
@@ -216,12 +220,12 @@
 @media (max-width: 480px) {
     .companyName {
         font-size: 22px;
-        margin-left: 80px;
+        margin-left: 120px;
     }
     .parallelogram {
         width: 132px;
         height: 72px;
-        left: 20px;
+        left: 50px;
     }
     .wjcText {
         font-size: 28px;
