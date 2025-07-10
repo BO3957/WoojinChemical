@@ -75,9 +75,39 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.languageButtons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.languageBtn {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.languageBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.languageBtn.active {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: white;
+}
+
 .searchBtn {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     background: #4472C4;
     border: none;
     border-radius: 50%;
@@ -96,6 +126,8 @@
 
 .searchBtn svg {
     display: block;
+    width: 22px;
+    height: 22px;
 }
 
 /* 반응형 미디어 쿼리 */
@@ -105,6 +137,14 @@
         margin-left: 120px;
         letter-spacing: 1px;
     }
+    .languageButtons {
+        margin-left: 15px;
+        gap: 8px;
+    }
+    .languageBtn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
     .parallelogram {
         width: 130px;
         height: 70px;
@@ -113,12 +153,29 @@
     .wjcText {
         font-size: 35px;
     }
+    .searchBtn {
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+    }
+    .searchBtn svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .companyName {
         font-size: 22px;
         margin-left: 80px;
+    }
+    .languageButtons {
+        margin-left: 10px;
+        gap: 6px;
+    }
+    .languageBtn {
+        padding: 5px 10px;
+        font-size: 11px;
     }
     .parallelogram {
         width: 110px;
@@ -130,5 +187,14 @@
     }
     .rectangle {
         height: 55px;
+    }
+    .searchBtn {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .searchBtn svg {
+        width: 18px;
+        height: 18px;
     }
 } 
