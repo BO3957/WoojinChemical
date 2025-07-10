@@ -206,10 +206,10 @@
         justify-content: flex-end;
     }
     .parallelogram {
-        width: 40.24px; /* 기존 44.71px의 10% 감소 */
-        height: 26.93px; /* 기존 29.92px의 10% 감소 */
+        width: 36.22px; /* 기존 40.24px의 10% 감소 */
+        height: 24.24px; /* 기존 26.93px의 10% 감소 */
         left: 8px;
-        top: -44px; /* 기존 -34px에서 10px 더 위로 */
+        top: -54px; /* 기존 -44px에서 10px 더 위로 */
         margin-top: 8px;
     }
     .companyName {
