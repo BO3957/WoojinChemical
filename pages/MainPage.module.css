@@ -5,12 +5,12 @@
 
 .rectangle {
     width: 100%;
-    height: 80px; /* 원래 크기로 복구 */
+    height: 80px;
     background: linear-gradient(135deg, #4472C4 0%, #5a82d4 100%);
     border: 1px solid black;
     box-sizing: border-box;
     position: absolute;
-    top: 140px; /* 기존 110px에서 30px 더 내림 */
+    top: 110px;
     left: 0;
     right: 0;
     display: flex;
@@ -25,8 +25,8 @@
 }
 
 .parallelogram {
-    width: 163.2px; /* 192px의 15% 감소 */
-    height: 91.8px; /* 108px의 15% 감소 */
+    width: 192px;
+    height: 108px;
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     position: absolute;
     border: 3px solid #4472C4;
@@ -73,31 +73,17 @@
     margin-left: 250px;
     letter-spacing: 2px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    position: relative;
-    top: 30px; /* 글자 자체도 30px 아래로 */
+    position: static;
+    top: 0;
 }
 
-.searchBtn {
-    width: 36.3px; /* 기존 33px의 10% 증가 */
-    height: 36.3px;
-    background: #4472C4;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.2s;
+.searchBtn, .menuBtn {
+    width: 30px;
+    height: 30px;
 }
-
-.searchBtn:hover {
-    background: #365899;
-}
-
-.searchBtn svg {
-    width: 26.6px; /* 기존 24.2px의 10% 증가 */
-    height: 26.6px;
-    display: block;
+.searchBtn svg, .menuBtn svg {
+    width: 22px;
+    height: 22px;
 }
 
 .buttonGroup {
@@ -109,24 +95,13 @@
     margin-right: 133px; /* 기존 140px의 5% 감소 */
 }
 
-.langBtn {
-    width: 72.9px; /* 기존 81px의 10% 감소 */
-    height: 29.25px; /* 기존 32.5px의 10% 감소 */
-    padding: 0 9.7px;
-    background: white;
-    border: 2px solid #4472C4;
-    border-radius: 22px; /* 더 둥글게 */
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12); /* 그림자 효과 */
-    font-weight: 600;
-    font-size: 12.15px; /* 기존 13.5px의 10% 감소 */
-    gap: 6.5px;
+.langBtn, .langBtnKorean {
+    width: 90px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 18px;
+    padding: 0 12px;
+    gap: 8px;
 }
 
 .langBtn:hover {
@@ -143,8 +118,8 @@
 }
 
 .flagCircle {
-    width: 17.9px;
-    height: 17.9px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: #fff;
     display: flex;
@@ -152,31 +127,24 @@
     justify-content: center;
     box-shadow: 0 1px 4px rgba(0,0,0,0.10);
     border: 1.5px solid #4472C4;
-    margin-left: 3.2px;
+    margin-left: 4px;
 }
 
 .flagImage {
-    width: 14.6px;
-    height: 14.6px;
+    width: 18px;
+    height: 18px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
 }
 
 .langBtnKorean {
-    width: 72.9px; /* 기존 81px의 10% 감소 */
-    height: 29.25px; /* 기존 32.5px의 10% 감소 */
-    padding: 0;
-    background: white;
-    border: 2px solid #4472C4;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    width: 90px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 18px;
+    padding: 0 12px;
+    gap: 8px;
 }
 
 .langBtnKorean:hover {
@@ -184,27 +152,8 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.menuBtn {
-    width: 36.3px; /* 기존 33px의 10% 증가 */
-    height: 36.3px;
-    background: #4472C4;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
 .menuBtn:hover {
     background: #365899;
-}
-
-.menuBtn svg {
-    width: 26.6px; /* 기존 24.2px의 10% 증가 */
-    height: 26.6px;
-    display: block;
 }
 
 /* 반응형 미디어 쿼리 */
@@ -227,8 +176,8 @@
         justify-content: flex-end;
     }
     .parallelogram {
-        width: 69px; /* 80px의 15% 감소 */
-        height: 37.4px; /* 44px의 15% 감소 */
+        width: 69px;
+        height: 37.4px;
         left: 8px;
         top: 6px;
         margin-top: 8px;
@@ -244,8 +193,8 @@
         font-size: 14px;
     }
     .langBtn, .langBtnKorean {
-        width: 51.3px; /* 기존 57px의 10% 감소 */
-        height: 18.8px; /* 기존 20.9px의 10% 감소 */
+        width: 51.3px;
+        height: 18.8px;
         font-size: 7.2px;
         border-radius: 13px;
         padding: 0 4.3px;
