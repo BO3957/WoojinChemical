@@ -191,8 +191,8 @@
         min-height: 72px;
         align-items: flex-start;
         padding: 8px 0 6px 0;
-        position: static;
-        top: 0;
+        position: relative;
+        top: 20px; /* 20px 아래로 */
     }
     .buttonGroup {
         flex-direction: row;
@@ -203,10 +203,10 @@
         justify-content: flex-end;
     }
     .parallelogram {
-        width: 55.2px; /* 69px의 20% 감소 */
+        width: 49.68px; /* 55.2px의 10% 감소 */
         height: 29.92px; /* 37.4px의 20% 감소 */
         left: 8px;
-        top: -4px; /* 10px 위로 */
+        top: -24px; /* 20px 위로 */
         margin-top: 8px;
     }
     .companyName {
@@ -214,8 +214,9 @@
         margin: 0 0 6px 8px;
         letter-spacing: 0.5px;
         position: relative;
-        top: 30px;
+        top: 0;
         margin-top: 0;
+        align-self: center; /* 세로 중앙정렬 */
     }
     .wjcText {
         font-size: 14px;
