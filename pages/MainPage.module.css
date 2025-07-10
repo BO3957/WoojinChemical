@@ -76,8 +76,8 @@
 }
 
 .searchBtn {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     background: #4472C4;
     border: none;
     border-radius: 50%;
@@ -98,37 +98,6 @@
     display: block;
 }
 
-.languageButtons {
-    display: flex;
-    gap: 10px;
-    margin-right: 20px;
-}
-
-.languageBtn {
-    padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-}
-
-.languageBtn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-}
-
-.languageBtn.active {
-    background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
 /* 반응형 미디어 쿼리 */
 @media (max-width: 768px) {
     .companyName {
@@ -143,18 +112,6 @@
     }
     .wjcText {
         font-size: 35px;
-    }
-    .languageBtn {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-    .searchBtn {
-        width: 32px;
-        height: 32px;
-    }
-    .searchBtn svg {
-        width: 18px;
-        height: 18px;
     }
 }
 
@@ -173,21 +130,5 @@
     }
     .rectangle {
         height: 55px;
-    }
-    .languageButtons {
-        gap: 6px;
-        margin-right: 10px;
-    }
-    .languageBtn {
-        padding: 4px 8px;
-        font-size: 10px;
-    }
-    .searchBtn {
-        width: 28px;
-        height: 28px;
-    }
-    .searchBtn svg {
-        width: 16px;
-        height: 16px;
     }
 } 
