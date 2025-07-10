@@ -3,7 +3,7 @@ import styles from './MainPage.module.css';
 
 const MainPage = () => {
   return (
-    <div className={styles.example}>
+    <div className={styles.container}>
       <div className={styles.rectangle}>
         <div className={styles.companyName}>우진화성</div>
         <button className={styles.searchBtn} aria-label="검색">
