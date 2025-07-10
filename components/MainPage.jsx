@@ -14,10 +14,12 @@ const MainPage = () => {
             </svg>
           </button>
           <button className={styles.langBtn} aria-label="English">
-            English
+            <span className={styles.flagIcon}>🇬🇧</span>
+            <span className={styles.btnText}>English</span>
           </button>
           <button className={styles.langBtnKorean} aria-label="한국어">
-            한국어
+            <span className={styles.flagIcon}>🇰🇷</span>
+            <span className={styles.btnText}>한국어</span>
           </button>
           <button className={styles.menuBtn} aria-label="메뉴">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">

@@ -25,8 +25,8 @@
 }
 
 .parallelogram {
-    width: 160px;
-    height: 90px;
+    width: 192px;
+    height: 108px;
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     position: absolute;
     border: 3px solid #4472C4;
@@ -105,9 +105,9 @@
 }
 
 .langBtn {
-    width: 80px;
+    width: 90px;
     height: 36px;
-    padding: 0;
+    padding: 0 8px;
     background: white;
     color: #4472C4;
     border: 2px solid #4472C4;
@@ -119,6 +119,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4px;
 }
 
 .langBtn:hover {
@@ -127,9 +128,9 @@
 }
 
 .langBtnKorean {
-    width: 80px;
+    width: 90px;
     height: 36px;
-    padding: 0;
+    padding: 0 8px;
     background: white;
     color: #4472C4;
     border: 2px solid #4472C4;
@@ -141,11 +142,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4px;
 }
 
 .langBtnKorean:hover {
     background: #4472C4;
     color: white;
+}
+
+.flagIcon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.btnText {
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .menuBtn {
@@ -177,8 +189,8 @@
         letter-spacing: 1px;
     }
     .parallelogram {
-        width: 130px;
-        height: 70px;
+        width: 156px;
+        height: 84px;
         left: 30px;
     }
     .wjcText {
@@ -189,9 +201,15 @@
         margin-right: 120px;
     }
     .langBtn, .langBtnKorean {
-        width: 70px;
+        width: 80px;
         height: 32px;
         font-size: 12px;
+    }
+    .flagIcon {
+        font-size: 14px;
+    }
+    .btnText {
+        font-size: 11px;
     }
 }
 
@@ -201,8 +219,8 @@
         margin-left: 80px;
     }
     .parallelogram {
-        width: 110px;
-        height: 60px;
+        width: 132px;
+        height: 72px;
         left: 20px;
     }
     .wjcText {
@@ -216,8 +234,14 @@
         margin-right: 100px;
     }
     .langBtn, .langBtnKorean {
-        width: 60px;
+        width: 70px;
         height: 28px;
         font-size: 11px;
+    }
+    .flagIcon {
+        font-size: 12px;
+    }
+    .btnText {
+        font-size: 10px;
     }
 }
