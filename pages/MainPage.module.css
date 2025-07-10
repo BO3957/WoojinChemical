@@ -30,7 +30,7 @@
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     position: absolute;
     border: 3px solid #4472C4;
-    top: 30px;
+    top: 10px; /* 20px 위로 */
     left: 75px;
     transform: skewX(-43deg);
     justify-content: center;
@@ -71,7 +71,7 @@
     font-family: Arial, sans-serif;
     font-weight: bold;
     margin-left: 250px;
-    margin-top: -30px; /* 30px 위로 */
+    margin-top: 30px; /* 30px 아래로 */
     letter-spacing: 2px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: static;
@@ -181,8 +181,8 @@
 @media (max-width: 768px) {
     .rectangle {
         flex-direction: column;
-        height: auto;
-        min-height: 80px;
+        height: 72px; /* 80px의 10% 감소 */
+        min-height: 72px;
         align-items: flex-start;
         padding: 8px 0 6px 0;
         position: static;
@@ -197,10 +197,10 @@
         justify-content: flex-end;
     }
     .parallelogram {
-        width: 69px;
-        height: 37.4px;
+        width: 55.2px; /* 69px의 20% 감소 */
+        height: 29.92px; /* 37.4px의 20% 감소 */
         left: 8px;
-        top: 6px;
+        top: -4px; /* 10px 위로 */
         margin-top: 8px;
     }
     .companyName {
@@ -230,6 +230,7 @@
     .flagCircle {
         width: 16px;
         height: 16px;
+        border-radius: 50%;
         margin-left: 1px;
         padding: 0;
     }
