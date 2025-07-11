@@ -187,8 +187,8 @@
 @media (max-width: 768px) {
     .rectangle {
         flex-direction: column;
-        height: 70px; /* 2px 줄임 */
-        min-height: 70px;
+        height: 68px; /* 2px 줄임 */
+        min-height: 68px;
         align-items: flex-start;
         padding: 8px 0 6px 0;
         position: relative;
@@ -207,10 +207,10 @@
         padding-right: 8px; /* 햄버거 메뉴 잘리지 않게 */
     }
     .parallelogram {
-        width: 32.60px;
-        height: 21.82px;
+        width: 30.97px; /* 기존 32.60px의 5% 감소 */
+        height: 20.73px; /* 기존 21.82px의 5% 감소 */
         left: 8px;
-        top: -15px; /* 3px 아래로 */
+        top: -12px; /* 3px 아래로 */
         margin-top: 8px;
         background: #fff;
     }
