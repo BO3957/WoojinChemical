@@ -185,6 +185,9 @@
 
 /* 반응형 미디어 쿼리 */
 @media (max-width: 768px) {
+    .container {
+        padding: 0; /* 모바일에서 padding 제거하여 100vw가 정확히 적용되도록 */
+    }
     .rectangle {
         flex-direction: column;
         height: 68px; /* 2px 줄임 */
