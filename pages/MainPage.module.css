@@ -194,7 +194,7 @@
         min-height: 68px;
         align-items: flex-start;
         padding: 8px 0 6px 0;
-        position: relative;
+        position: absolute; /* relative → absolute */
         top: 23px; /* 1px 아래로 */
         width: 100vw; /* 가로 꽉 차게 */
         left: 0;
@@ -213,7 +213,7 @@
         width: 36.22px; /* 기존 30.97px의 10% 감소 */
         height: 24.24px; /* 기존 20.73px의 10% 감소 */
         left: 8px;
-        top: -34px; /* 3px 아래로 */
+        top: 3px; /* 3px 아래로 */
         margin-top: 8px;
         background: #fff;
     }
@@ -281,7 +281,7 @@
         width: 36.22px; /* 768px 미디어 쿼리와 동일 */
         height: 24.24px; /* 768px 미디어 쿼리와 동일 */
         left: 8px; /* 768px 미디어 쿼리와 동일 */
-        top: -34px; /* 768px 미디어 쿼리와 동일 */
+        top: 3px; /* 768px 미디어 쿼리와 동일 */
     }
     .wjcText {
         font-size: 28px;
@@ -289,6 +289,7 @@
     .rectangle {
         height: 68px; /* 768px 미디어 쿼리와 동일 */
         top: 23px; /* 768px 미디어 쿼리와 동일 */
+        position: absolute;
     }
     .buttonGroup {
         gap: 5px;
