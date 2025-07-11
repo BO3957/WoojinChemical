@@ -195,7 +195,7 @@
         align-items: flex-start;
         padding: 8px 0 6px 0;
         position: relative;
-        top: 20px;
+        top: 22px; /* 2px 아래로 */
         width: 100vw; /* 가로 꽉 차게 */
         left: 0;
         right: 0;
@@ -210,8 +210,8 @@
         padding-right: 8px; /* 햄버거 메뉴 잘리지 않게 */
     }
     .parallelogram {
-        width: 30.97px; /* 기존 32.60px의 5% 감소 */
-        height: 20.73px; /* 기존 21.82px의 5% 감소 */
+        width: 27.87px; /* 기존 30.97px의 10% 감소 */
+        height: 18.66px; /* 기존 20.73px의 10% 감소 */
         left: 8px;
         top: -12px; /* 3px 아래로 */
         margin-top: 8px;
@@ -278,15 +278,17 @@
         margin-left: 120px;
     }
     .parallelogram {
-        width: 132px;
-        height: 72px;
-        left: 50px;
+        width: 27.87px; /* 768px 미디어 쿼리와 동일 */
+        height: 18.66px; /* 768px 미디어 쿼리와 동일 */
+        left: 8px; /* 768px 미디어 쿼리와 동일 */
+        top: -12px; /* 768px 미디어 쿼리와 동일 */
     }
     .wjcText {
         font-size: 28px;
     }
     .rectangle {
-        height: 55px;
+        height: 68px; /* 768px 미디어 쿼리와 동일 */
+        top: 22px; /* 768px 미디어 쿼리와 동일 */
     }
     .buttonGroup {
         gap: 5px;
