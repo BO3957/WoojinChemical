@@ -1,0 +1,43 @@
+.logo {
+    font-family: Arial;
+    font-weight: bold;
+    display: flex;
+}
+.parallelogram {
+    background-color: white;
+    border: 2px solid blue;
+    width: 6.8125rem;
+    height: 3.5625rem;
+    transform: skewX(-34deg);
+    margin-left: 1.875rem;
+    margin-bottom: -0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.parallelogram-text-wrapper {
+    transform: skewX(34deg); 
+    height: 100%;
+     height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 2.0625rem;
+    font-weight: bolder;
+    margin-top: 0.25rem;
+}
+.parallelogram span.wj-black{
+    color: black;
+}
+.parallelogram span.c-red {
+    color: red;
+}
+.blue-rectangle {
+    background-color: blue;
+    width: 18.70rem;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    color:white;
+
+}
