@@ -36,7 +36,7 @@
 .blue-rectangle {
     background-color: rgb(0, 112, 192);
     width: 114em;
-    height: 5rem;
+    height: 5em;
     display: flex;
     align-items: center;
     color:white;
@@ -88,4 +88,5 @@
     background-color: white;
     border-radius: 0.05rem;
     transition: all 0.3s ease-in-out;
+}
 }
